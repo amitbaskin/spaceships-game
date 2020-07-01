@@ -1,0 +1,63 @@
+amit.baskin
+
+
+
+
+=============================
+=      File description     =
+=============================
+SpaceShipFactory.java - creates the spaceships required:
+h - Human, r - Runner, b - Basher, a - Aggressive,
+d - drunkard, s - Special.
+SpaceShip.java - the general spaceship from which extends specific types of spaceships.
+HumanSpaceShip.java - the spaceship to play and control: move with regular arrows, 
+d - fire, s - shield, a - teleport.
+RunnerSpaceShip - a aspaceship that tries to avoid and interaction with other spaceships, 
+it runs away from the closest ship to it constantluy.
+BasherSpaceShip - a spaceship that pusues the closest spaceship and tries to bash it
+while its own shield is on.
+AggressiveSpaceShip -  a spaceship that pusues the closest spaceship
+and tries to fire at it constantly.
+DrunkardSpaceShip - a spaceship of which its pilot had too much to drink.
+It turn its shield on randomly and "explodes" with fire when it is hit:
+it fires, teleports and makes fire appear in random pkaces. Its shield appears as 
+a funny image.
+SpaecialSpaceShip - it is special. 
+If it is hit then it fires for several rounds in circles while its shield is on.
+If its health level is too low then if teleports constantly undtil it dies.
+
+=============================
+=          Design           =
+=============================
+I decided to have the SpaceShip class as the common "father" of the different types of spaceships,
+since they all share similar code: similar methods and variables.
+This way it was convinient to implement the different classes of spaceships
+The way my project is built, It is very convinient to add new functionalities,
+whether its for the general spaceship class or for the specific spaceships. 
+If it is a general functionality it can be added to the SpaceShip class and be used either directly 
+from there by making a public method or by making getters and setters and let the specific
+spaceships manage the details.
+For tt=he modularity, the project is built in quite small pieces so its easy to adjust and change.
+While writing the code I tried to keep the code modular and simple in order to change it easily
+and try different versions. 
+About the relations between the classes, it is quite intuitive to have the SpaceShip class as the
+common father and is convinient to use common methods and variables from it.
+This way it is also easy to understand the way the program works
+I invested a lot of thought on the relations between the general class of spaceships
+and the different classes of spaceships.
+Furthermore, I decided causiously on which methods to keep in the generel spaceship class and which to
+keep in the specific classes.
+For my own spaceships ideas: the drunkard and the special, 
+I invested as much creativity and simpleness together as I could.
+I made sure to establish the drunkard spaceship as drunk using the randomness and
+its amusing shield image. As for the special spaceship,
+I tried to make it act impressively with its fire and teleporting.
+
+=============================
+=  Implementation details   =
+=============================
+
+
+=============================
+=    Answers to questions   =
+=============================
